@@ -116,18 +116,52 @@
 					<h3>Every HTML document starts from...</h3>
 					<pre>
 						<code>
-							<!DOCTYPE html>
+&lt;!DOCTYPE html&gt;
 
-							<html>
-								<head>
-									<title>I am a Web page, and it's enough</title>
-								</head>
+&lt;html&gt;
+  &lt;head&gt;
+   &lt;title&gt;I am a Web page, and it's enough&lt;/title&gt;
+   &lt;meta charset="имя кодировки"&gt;
+  &lt;/head&gt;
 
-								<body>
-									Some content...
-								</body>
-							</html>
+  &lt;body&gt;
+    Some content...
+    &lt;!-- любой текст --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+						</code>
+					</pre>
+				</section>
 
+				<section data-state>
+					<h3>Add some styles and scripts</h3>
+					<pre>
+						<code>
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+  &lt;head&gt;
+   &lt;title&gt;I am a Web page, and it's enough&lt;/title&gt;
+   &lt;meta charset="utf-8"&gt;
+   &lt;link href="external.css"&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;style&gt;
+		.main-header {
+							color: green;
+							}
+    &lt;/style&gt;
+
+	&lt;script&gt;
+	   console.log('test');
+    &lt;/script&gt;
+
+    &lt;script src="external.js"&gt;
+    &lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
 						</code>
 					</pre>
 				</section>
