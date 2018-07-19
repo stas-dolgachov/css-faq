@@ -67,7 +67,7 @@
 							<h3>5 projects</h3>
 						</li>
 						<li class="fragment">
-							<h4>I like dogs</h4>
+							<h3>I like dogs</h3>
 						</li>
 					</ul>
 				</section>
@@ -225,7 +225,7 @@ selector {
   property1: value1;
   property2: value2;
 }
-							
+
 button {
   border: 1px solid red;
   color: green;
@@ -234,7 +234,177 @@ button {
 					</pre>
 				</section>
 
+				<section data-state="cssselectors1">
+					<h2>CSS selectors</h2>
+					<ul>
+						<li class="fragment"><h3>*</h3></li>
+						<li class="fragment"><h3>Tag</h3></li>
+						<li class="fragment"><h3>Class</h3></li>
+						<li class="fragment"><h3>Pseudo class</h3></li>
+						<li class="fragment"><h3>Attribute</h3></li>
+						<li class="fragment"><h3>ID</h3></li>
+						<li class="fragment"><h3>Inline style</h3></li>
+					</ul>
+					<a target="_blank" href="https://codepen.io/Dolgach/pen/BPQWam">Try me</a>
+				</section>
+
+				<section data-state="cssinheritance1">
+					<h2>CSS inheritance</h2>
+					<pre style="float: left; width: 50%;">
+						<code>
+&lt;html&gt;
+   &lt;head&gt;&lt;/head&gt;
+   &lt;body&gt;
+      &lt;p&gt;Текст документа&lt;/p&gt;
+      &lt;p class=&quot;text&quot;&gt;Выделенная
+	  &lt;span&gt;строка&lt;/span&gt;&lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+						</code>
+					</pre>
+
+					<img style="width: 50%; display: inline-block;" src="assets/i/inheritance.png" alt="html tree">
+				</section>
+
+				<section>
+					<h2>CSS inheritance</h2>
+					<iframe height='600' scrolling='no' title='simple inheritance' src='//codepen.io/Dolgach/embed/RBopqQ/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/Dolgach/pen/RBopqQ/'>simple inheritance</a> by Stas (<a href='https://codepen.io/Dolgach'>@Dolgach</a>) on <a href='https://codepen.io'>CodePen</a>.
+					</iframe>
+				</section>
+
+				<section>
+					<h3>Inherited:</h3>
+					<p>
+						font-size, font-family, font-style, font-weight, color, text-align, text-transform, text-indent, line-height, letter-spacing, word-spacing, white-space, direction and etc.
+					</p>
+
+					<h3>Not inherited:</h3>
+					<p>background, border, padding, margin, width, height, position and etc</p>
+
+					<h3>For other cases:</h3>
+					<p>background: inherit;</p>
+				</section>
+
+				<section>
+					<h2>CSS cascade</h2>
+					<img width="135%" src="assets/i/selectors-sp.jpg" alt="selectors specificity">
+					<br>
+					<a target="_blank" href="https://codepen.io/Dolgach/pen/BPQWam">Try me</a>
+				</section>
+
+				<section>
+					<h2>Document block model</h2>
+					<h3>display: inline;</h3>
+					<ul>
+						<li>No new lines before and after</li>
+						<li>Cannot set width, height</li>
+						<li>Can set up only horizontal padding and margins</li>
+						<li>
+							<p><i>Example:</i> img, button, span, strong</p>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Document block model</h2>
+					<h3>display: block;</h3>
+					<ul>
+						<li>New lines before and after</li>
+						<li>Adjustable width, height</li>
+						<li>Take all horizontal available place</li>
+						<li>
+							<p><i>Example:</i> p, h1, div, section, article, ul</p>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Document block model</h2>
+					<img src="assets/i/block_model.png" alt="default block model">
+					<h3 class="fragment">box-sizing: border-box</h3>
+				</section>
+
+				<section>
+					<h2>Document block model</h2>
+					<h3>Margin collapse</h3>
+					<iframe height='500' scrolling='no' title='margin collapse' src='//codepen.io/Dolgach/embed/ejBWLR/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/Dolgach/pen/ejBWLR/'>margin collapse</a> by Stas (<a href='https://codepen.io/Dolgach'>@Dolgach</a>) on <a href='https://codepen.io'>CodePen</a>.
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Document block model</h2>
+					<h3>Margin dropping out</h3>
+					<iframe height='500' scrolling='no' title='margin dropping out' src='//codepen.io/Dolgach/embed/gjLWZV/?height=265&theme-id=0&default-tab=css,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/Dolgach/pen/gjLWZV/'>margin dropping out</a> by Stas (<a href='https://codepen.io/Dolgach'>@Dolgach</a>) on <a href='https://codepen.io'>CodePen</a>.
+					</iframe>
+				</section>
+
+				<section>
+					<h2>Document block model</h2>
+					<h3>display: inline-block</h3>
+					<ul>
+						<li>Can set dimensions</li>
+						<li>Width relies on content</li>
+						<li>No new lines</li>
+						<li>Align like inline elements</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Document flow</h2>
+					<iframe height='500' scrolling='no' title='YpBYWE' src='//codepen.io/vend3tta/embed/YpBYWE/?height=500&theme-id=dark&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='//codepen.io/vend3tta/pen/YpBYWE/'>YpBYWE</a> by vend3tta (<a href='//codepen.io/vend3tta'>@vend3tta</a>) on <a href='//codepen.io'>CodePen</a>.
+					</iframe>
+				</section>
+
+				<section>
+					<h2><span class="coloured-symbols coloured-symbols_blue">CSS</span> Units</h2>
+					<blockquote class="question">Why are there so many CSS units for expressing length: em, pt, px... Which are useful when?</blockquote>
+				</section>
+
+				<section>
+					<h3>Relative Lengths</h3>
+					<pre><code>
+em	/* relative to the font-size of the parent element */
+ex	/* relative to height of the "x" in lowercase */
+ch	/* relative to width of the "0" */
+rem	/* relative to the font-size of root element */
+
+vw	/* relative to 1% of the width of the viewport */
+vh	/* relative to 1% of the height of the viewport */
+vmin	/* relative to 1% of viewport's* smaller dimension */
+vmax	/* relative to 1% of viewport's* larger dimension */
+
+%	/* relative to the same property of the parent element */
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Absolute Lengths</h3>
+					<pre><code>cm	/* centimeters */
+mm	/* millimeters */
+
+in	/* inches (1in = 96px = 2.54cm) */
+px	/* pixels (1px = 1/96th of 1in) */
+
+pt	/* points (1pt = 1/72 of 1in) */
+pc	/* picas (1pc = 12 pt) */</code></pre>
+				</section>
+
+				<section>
+					<h4>Notes</h4>
+					<ul>
+						<li class="fragment"><span class="coloured-symbols coloured-symbols_blue">em</span> and <span class="coloured-symbols coloured-symbols_blue">px</span> are most usable units for fonts, rem becoming popular.</li>
+						<li class="fragment"><span class="coloured-symbols coloured-symbols_blue">%</span> is the most popular unit for layout due to responsive.</li>
+						<li class="fragment"><span class="coloured-symbols coloured-symbols_blue">vw</span>/<span class="coloured-symbols coloured-symbols_blue">vh</span> will become popular with new Grid Layout.</li>
+						<li class="fragment">Most of absolute units are used preferably for print page rules.</li>
+					</ul>
+				</section>
+				
 				<!--MY SLIDES END-->
+				<!--
+				Links
+				https://www.w3.org/TR/CSS21/propidx.html
+
+				-->
 
 				<section data-state="compatibility">
 					<h2 data-question="1">Browser Compatibility</h2>
